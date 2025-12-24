@@ -49,7 +49,7 @@ async function getSongs(folder) {
                             </div>
                             <div class="playnow">
                                 <span>Play Now</span>
-                                <img src="img/play.svg" alt="">
+                                <img src="./img/play.svg" alt="">
                             </div> </li>`;
     }
 
@@ -101,7 +101,7 @@ async function displayAlbums() {
                                 <polygon points="40,35 65,50 40,65" fill="black" />
                             </svg>
                         </div>
-                        <img src="/songs/${folder}/cover.jpg" alt="">
+                        <img src="./songs/${folder}/cover.jpg" alt="">
                         <h4>${response.title}</h4>
                         <p>${response.description}</p>
                     </div>`
@@ -133,11 +133,11 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play()
-            play.src = "img/pause.svg";
+            play.src = "./img/pause.svg";
         }
         else {
             currentSong.pause()
-            play.src = "img/play.svg";
+            play.src = "./img/play.svg";
         }
 
     });
